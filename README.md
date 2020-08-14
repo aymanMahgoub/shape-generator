@@ -32,7 +32,7 @@ $ composer install
 ```
    It is not give us a stright line in the second line and third line
    also in the last line and the previous one.
-   in the tow star shap it is always add to more 'X' from right and left
+   in the tow star shap it is always add two more 'X' from right and left
    that end it up with star with stright lines   
 ```
 
