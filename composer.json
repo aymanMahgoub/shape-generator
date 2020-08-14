@@ -1,0 +1,35 @@
+{
+    "name": "mahgoub/shape-generator",
+    "description": "Generate ASCII Shape",
+    "authors": [
+        {
+            "name": "aymanMahgoub",
+            "email": "ayman.mahgoub1@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "keywords": [
+        "Shape",
+        "Piramids",
+        "Star"
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "Src/App"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ShapeGenerator\\tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
