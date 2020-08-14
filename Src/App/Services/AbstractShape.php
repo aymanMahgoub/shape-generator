@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\App;
+namespace Services;
 
 /**
  * Class AbstractShape
