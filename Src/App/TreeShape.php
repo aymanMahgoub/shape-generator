@@ -11,15 +11,22 @@ use InvalidArgumentException;
  */
 class TreeShape extends AbstractShape
 {
+    /**
+     * @param int $height
+     */
     public function drawShape(int $height)
     {
         if ($height <= 0) {
             throw new InvalidArgumentException('Height must be greater than 0');
         }
         $this->drawShape($height);
+        $this->drawFirstOrLastLine($height);
         $this->drawTree($height);
     }
 
+    /**
+     * @param $height
+     */
     private function drawTree($height)
     {
         $leftPointer = $rightPointer = $height;
