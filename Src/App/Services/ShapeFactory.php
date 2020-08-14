@@ -22,7 +22,7 @@ class ShapeFactory
         if ($type === ShapeConstant::TREE) {
             return new TreeShape();
         } elseif ($type === ShapeConstant::STAR) {
-            return new starShape();
+            return new StarShape();
         }
         throw new InvalidArgumentException('Passed invalid shape type');
     }

@@ -5,11 +5,11 @@ namespace Services;
 use InvalidArgumentException;
 
 /**
- * Class starShape
+ * Class StarShape
  *
- * @package Src\App
+ * @package Services
  */
-class starShape extends AbstractShape
+class StarShape extends AbstractShape
 {
     /**
      * @param int $height

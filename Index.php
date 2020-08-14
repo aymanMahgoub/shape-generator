@@ -1,6 +1,5 @@
 <?php
-
-require __DIR__ .'/vendor/autoload.php';
+require __DIR__.'/vendor/autoload.php';
 
 use Services\ShapeFactory;
 use Constant\ShapeConstant;
@@ -11,7 +10,6 @@ $starShape = $shapeFactory->getShapeByType(ShapeConstant::STAR);
 $starShape->drawShape(5);
 $starShape->drawShape(7);
 $starShape->drawShape(11);
-
 $treeShape = $shapeFactory->getShapeByType(ShapeConstant::TREE);
 // draw tree small then medium then large
 $treeShape->drawShape(5);
