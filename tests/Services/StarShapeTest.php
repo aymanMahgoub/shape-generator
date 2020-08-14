@@ -7,6 +7,11 @@ use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 use Services\ShapeFactory;
 
+/**
+ * Class StarShapeTest
+ *
+ * @package ShapeGenerator\tests\Services
+ */
 class StarShapeTest extends TestCase
 {
     public function testPassNegativeHeight()
@@ -31,13 +36,13 @@ class StarShapeTest extends TestCase
 
     public function testDrawStarShape()
     {
-        $shape = '     +
+        $expectedShape = '     +
      X
   +XXXXX+
      X
      +
 ';
-        $this->expectOutputString($shape);
+        $this->expectOutputString($expectedShape);
         $shapeFactory = new ShapeFactory();
         $starShape    = $shapeFactory->getShapeByType(ShapeConstant::STAR);
         $starShape->drawShape(5);
