@@ -26,6 +26,7 @@ Abstract class AbstractShape
                 echo " ";
             }
         }
+        echo "\n";
     }
 
 }

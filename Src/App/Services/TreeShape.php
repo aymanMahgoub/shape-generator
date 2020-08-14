@@ -19,7 +19,6 @@ class TreeShape extends AbstractShape
         if ($height <= 0) {
             throw new InvalidArgumentException('Height must be greater than 0');
         }
-        $this->drawShape($height);
         $this->drawFirstOrLastLine($height);
         $this->drawTree($height);
     }
